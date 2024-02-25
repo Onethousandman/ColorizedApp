@@ -12,7 +12,7 @@ protocol ColorViewControllerDelegate: AnyObject {
     func setColor(for color: UIColor)
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let colorVC = segue.destination as? ColorViewController {
